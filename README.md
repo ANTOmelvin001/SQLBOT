@@ -1,49 +1,30 @@
-🤖 SQL Tutor Bot — Educational Mode
+🤖 SQL Tutor Bot – Educational Mode
 
-An interactive SQL learning chatbot built with Python, SQL, and Streamlit.
-It explains SQL concepts (basic → intermediate), runs real queries, and helps learners practice with examples.
+This is an interactive SQL learning assistant built using Python, Streamlit, and MySQL.
+It teaches basic to intermediate SQL concepts with explanations, sample queries, practice questions, and even executes queries in real time.
 
-📌 Features
+🚀 Features
 
-📚 Concept Guides – Explains SQL topics (DDL, DML, DCL, TCL, WHERE, JOIN, GROUP BY, Aggregates) with examples and practice questions.
+📚 Concept Explanations – Learn DDL, DML, DCL, TCL, WHERE, JOIN, GROUP BY, and Aggregate functions
+💬 English → SQL – Converts natural language into SQL queries
+🖥️ Query Execution – Runs SQL queries and displays results in a table
+🔎 SQL Breakdown – Explains each part of a query in simple terms
+🧑‍🏫 Practice Mode – Provides practice tasks for learners
+📱 Interactive UI – Built with Streamlit for a clean learning experience
 
-💬 English → SQL – Converts natural language questions into SQL queries.
+📁 Files Included
 
-🖥️ SQL Execution – Runs queries on a MySQL database and shows results in a table.
+sql_tutor_bot_phase8_educational_full_expl.py – Main Streamlit app
+requirements.txt – Dependencies (Streamlit, MySQL Connector, Pandas)
+Database: students & classes tables (used for demo queries)
 
-🔎 SQL Explanation – Breaks down raw SQL statements into easy-to-understand parts.
-
-🎓 Beginner-Friendly – Helps users learn step by step from basics to intermediate SQL.
-
-🛠️ Tech Stack
-
-Python 🐍 – Core programming
-
-Streamlit 🎨 – Interactive web app UI
-
-MySQL 🗄️ – Database backend
-
-Pandas 📊 – Display query results in tabular format
-
-Regex 🔍 – English-to-SQL translation & input detection
-
-📂 Project Structure
-sql_tutor_bot_phase8_educational_full_expl.py   # Main application
-
-🚀 How to Run
-
-Clone the repo / Save the script
-
-git clone https://github.com/your-username/sql-tutor-bot.git
-cd sql-tutor-bot
-
-
-Install dependencies
-
+📦 How to Use
+Clone or download the project folder.
+Install dependencies:
 pip install streamlit mysql-connector-python pandas
 
 
-Set up MySQL Database
+Setup MySQL Database:
 
 CREATE DATABASE sql_chatbot;
 USE sql_chatbot;
@@ -61,48 +42,29 @@ CREATE TABLE classes (
 );
 
 
-Run the app
-
+Run the app:
 streamlit run sql_tutor_bot_phase8_educational_full_expl.py
-
-
 Open in browser → http://localhost:8501
 
-🎯 Example Interactions
+✅ Assignment Checklist
+📚 Explains SQL concepts clearly
+💬 Handles English & SQL inputs
+🖥️ Runs queries on MySQL
+🔎 Explains query parts
+🎓 Includes practice questions
+📱 User-friendly Streamlit interface
 
-User: "Explain DDL"
+🎥 Demo
+🔗 Source Code: GitHub Repository
+🌐 Live Demo (Optional): Deploy on Streamlit Cloud or Heroku
 
-Bot: Shows explanation + sample queries + practice tasks.
+🛠 Built With
+Python 🐍
+Streamlit 🎨
+MySQL 🗄️
+Pandas 📊
+Regex 🔍
 
-User: "List all students"
+👨‍💻 Author
 
-Bot: Generates →
-
-SELECT * FROM students;
-
-
-Explanation + Option to Run Query.
-
-User: Raw SQL
-
-SELECT name, age FROM students WHERE age > 20;
-
-
-Bot: Explains each SQL clause and executes query.
-
-🔑 Key Learning Benefits
-
-✅ Learn SQL concepts step-by-step
-✅ Run and test queries in real-time
-✅ Practice with guided questions
-✅ Understand queries with simple explanations
-
-🌟 Future Enhancements
-
-Add support for advanced SQL (window functions, subqueries)
-
-AI-powered error correction for SQL syntax
-
-Gamified SQL practice challenges
-
-🙌 Built with ❤️ by Anto Melvin E – Turning ideas into interactive learning tools.
+Developed by Anto Melvin E – Passionate about Python, SQL, Web Development, and AI-powered assistants.
