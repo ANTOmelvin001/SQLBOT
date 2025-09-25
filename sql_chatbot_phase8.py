@@ -1,4 +1,5 @@
 # sql_tutor_bot_phase8_educational_full_expl.py
+#SQLBOT COMPLETED CODE IN PHASE *
 import streamlit as st
 import mysql.connector
 import pandas as pd
